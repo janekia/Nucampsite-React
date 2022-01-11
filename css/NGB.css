@@ -1,0 +1,196 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+header h2{
+    color:#7D6A86;
+}
+footer {
+    background-image: linear-gradient(#7D6A86, white);
+    padding: 20px 0;
+}
+.jumbotron {
+    margin:0;
+    padding: 30px;
+    background-image: linear-gradient(#7D6A86, white);
+    color: white;
+}
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; 
+}
+
+.navbar {
+    /*background-color: #db4dff;*/
+    background-color: #800080;
+}
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.product-grid{
+    font-family: 'Poppins', sans-serif;
+    border: 5px dashed rgba(96,79,147,0.3);
+}
+.product-grid .product-image{
+    overflow: hidden;
+    position: relative;
+}
+.product-grid .product-image a.image{ display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+.product-grid .product-image .pic-1{ transition: all 0.5s ease 0s; }
+.product-grid:hover .product-image .pic-1{ opacity: 0; }
+.product-grid .product-image .pic-2{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.product-grid:hover .product-image .pic-2{ opacity: 1; }
+.product-grid .product-links{
+    font-size: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.product-grid .product-links li{
+    width: 35px;
+    margin: 0;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.3s ease 0s;
+}
+.product-grid .product-links li:nth-child(1){
+    width: calc(100% - 105px);
+    transform: translateY(0) translateX(-100px);
+}
+.product-grid .product-links li:nth-child(2){ transition-delay: 0.1s; }
+.product-grid .product-links li:nth-child(3){ transition-delay: 0.2s; }
+.product-grid .product-links li:nth-child(4){ transition-delay: 0.3s; }
+.product-grid:hover .product-links li{
+    opacity: 1;
+    transform: translate(0);
+}
+.product-grid .product-links li a{
+    color: #fff;
+    background: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    display: block;
+    transition: all 0.2s ease-out;
+}
+.product-grid .product-links li a:hover{
+    color: #fff;
+    background-color: #604f93;
+}
+.product-grid .product-content{ padding: 15px 15px 12px; }
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin: 0 0 10px;
+}
+.product-grid .title a{
+    color: #333;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .title a:hover{ color: #604f93; }
+.product-grid .price{
+    color: #604f93;
+    font-size: 16px;
+    font-weight: 700;
+    width: calc(100% - 89px);
+    display: inline-block;
+}
+.product-grid .rating{
+    color: #eda704;
+    font-size: 12px;
+    width: 85px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+@media screen and (max-width: 990px){
+    .product-grid{ margin: 0 0 30px; }
+}
+
+@import url('https://fonts.googleapis.com/css?family=roboto');
+
+body{
+    font-family: 'roboto' , sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+   i {
+        margin-right: 10px;
+    }
+
+    input:focus,
+    button:focus,
+    .form-control:focus{
+        outline: none;
+        box-shadow: none;
+    }
+
+    .form-control:disabled, .form-control[readonly]{
+        background-color: #fff;
+    }
+.table tr,
+.table tr td{
+    vertical-align: middle;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.button-container .forn-control{
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+#myTable .form-control{
+    width:auto;
+    display: inline-block;
+}
+.cart-qty-plus,
+.cart-qty-minus{
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+    background-color: #5161ce;
+    color: #fff;
+}
+.img-prdct{
+    width: 50px;
+    height: 50px;
+    background:#5161ce;
+    border-radius: 4px;
+}
+.img-prdct img{
+    width: 100%;
+}
